@@ -1,0 +1,10 @@
+https://pytorch.org/get-started/previous-versions/
+
+ncu -u
+
+conda create -n myenv python=3.8
+conda activate myenv
+
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 -c pytorch
+pip install -U git+https://github.com/facebookresearch/demucs#egg=demucs
+pip install basic-pitch
