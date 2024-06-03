@@ -1,0 +1,11 @@
+Flask
+boto3
+werkzeug
+demucs
+numpy
+librosa
+scipy
+torch 
+torchvision 
+torchaudio
+basic-pitch

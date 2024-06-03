@@ -1,0 +1,40 @@
+2024-06-03 16:58:13,939 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 16:58:13,940 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 16:59:09,649 INFO:127.0.0.1 - - [03/Jun/2024 16:59:09] "POST /upload HTTP/1.1" 200 -
+2024-06-03 17:03:59,466 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 17:03:59,466 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 17:04:59,716 INFO:127.0.0.1 - - [03/Jun/2024 17:04:59] "POST /upload HTTP/1.1" 200 -
+2024-06-03 17:09:31,391 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 17:09:31,391 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 17:10:24,422 INFO:127.0.0.1 - - [03/Jun/2024 17:10:24] "POST /upload HTTP/1.1" 200 -
+2024-06-03 17:14:18,285 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 17:14:18,285 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 17:15:09,673 INFO:127.0.0.1 - - [03/Jun/2024 17:15:09] "POST /upload HTTP/1.1" 200 -
+2024-06-03 17:16:29,638 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 17:16:29,638 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 17:17:18,108 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:17:18,128 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:17:18,146 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:17:18,166 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:17:18,167 INFO:127.0.0.1 - - [03/Jun/2024 17:17:18] "POST /upload HTTP/1.1" 200 -
+2024-06-03 17:20:51,377 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 17:20:51,377 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 17:21:41,922 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:21:41,942 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:21:41,962 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:21:41,982 ERROR:Error uploading file: Unable to locate credentials
+2024-06-03 17:21:41,983 INFO:127.0.0.1 - - [03/Jun/2024 17:21:41] "POST /upload HTTP/1.1" 200 -
+2024-06-03 17:24:39,723 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2024-06-03 17:24:39,723 INFO:[33mPress CTRL+C to quit[0m
+2024-06-03 17:25:32,742 INFO:File output/stems/htdemucs/input/drums.wav uploaded to tunetweak/drums.wav
+2024-06-03 17:25:33,932 INFO:File output/stems/htdemucs/input/vocals.wav uploaded to tunetweak/vocals.wav
+2024-06-03 17:25:34,930 INFO:File output/stems/htdemucs/input/other.wav uploaded to tunetweak/other.wav
+2024-06-03 17:25:36,148 INFO:File output/stems/htdemucs/input/bass.wav uploaded to tunetweak/bass.wav
+2024-06-03 17:25:36,149 INFO:127.0.0.1 - - [03/Jun/2024 17:25:36] "POST /upload HTTP/1.1" 200 -
