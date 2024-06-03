@@ -54,21 +54,21 @@ app.post('/upload', upload.single('file'), async (req, res) => {
 
       console.log('File successfully renamed to input');
 
-      const demucsCommand = `demucs -o ${outputDir} ${inputFilePath}`;
-      exec(demucsCommand, async (error, stdout, stderr) => {
-        if (error) {
-          console.error(`Demucs error: ${error.message}`);
-          return res.status(500).send('Stemming failed');
-        }
+      // const demucsCommand = `demucs -o ${outputDir} ${inputFilePath}`;
+      // exec(demucsCommand, async (error, stdout, stderr) => {
+      //   if (error) {
+      //     console.error(`Demucs error: ${error.message}`);
+      //     return res.status(500).send('Stemming failed');
+      //   }
 
-        console.log('Stems successfully created');
+      //   console.log('Stems successfully created');
 
         const stemsPath = path.join(outputDir, 'htdemucs', 'input');
         const stems = fs.readdirSync(stemsPath).filter(file => file.endsWith('.wav'));
 
-        stems.forEach(stem => {
-          fs.renameSync(path.join(stemsPath, stem), path.join(stemsDir, stem));
-        });
+        // stems.forEach(stem => {
+        //   fs.renameSync(path.join(stemsPath, stem), path.join(stemsDir, stem));
+        // });
 
         console.log('Stems successfully moved to stems directory');
 
@@ -78,18 +78,18 @@ app.post('/upload', upload.single('file'), async (req, res) => {
           const midiFilePath = path.join(midiDir, midiFileName);
           const basicPitchCommand = `basic-pitch ${midiDir} ${stemFilePath}`;
 
-          return new Promise((resolve, reject) => {
-            exec(basicPitchCommand, (error, stdout, stderr) => {
-              if (error) {
-                console.error(`Basic Pitch error: ${error.message}`);
-                reject(error);
-              } else {
-                console.log(`MIDI file successfully created: ${midiFileName}`);
-                resolve(midiFileName);
-              }
-            });
-          });
-        });
+      //     return new Promise((resolve, reject) => {
+      //       exec(basicPitchCommand, (error, stdout, stderr) => {
+      //         if (error) {
+      //           console.error(`Basic Pitch error: ${error.message}`);
+      //           reject(error);
+      //         } else {
+      //           console.log(`MIDI file successfully created: ${midiFileName}`);
+      //           resolve(midiFileName);
+      //         }
+      //       });
+      //     });
+      //   });
 
         Promise.all(midiPromises).then(async (midiFiles) => {
           console.log('All MIDI files successfully created');
